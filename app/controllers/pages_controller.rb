@@ -1,6 +1,8 @@
 class PagesController < ApplicationController
 
   def index
+    @users = User.all
+    current_user
   end
 
   def startups
@@ -11,7 +13,7 @@ class PagesController < ApplicationController
 
   def contact
   end
-  
+
 
 
 

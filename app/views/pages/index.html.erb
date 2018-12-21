@@ -290,7 +290,9 @@
           <div class="row">
             <div class="col-lg-3 col-md-6 text-center">
               <div class="service-box mt-5 mx-auto">
+                <% if User.second.profile_picture.attached? %>
                 <li class="article-title"><%= image_tag User.second.profile_picture, class: "profile-picture", alt: "Franck Moine" %></li>
+                <% end %>
                 <h3 class="mb-2 lessbig"><%= User.second.first_name %> <%= User.second.last_name %></h3>
                 <h5 class="mb-2 lessbig-2"><%= User.second.title %></h3>
                 <p class="text-muted mb-0 less-less-big"><%= User.second.description %></p>
@@ -298,7 +300,9 @@
             </div>
             <div class="col-lg-3 col-md-6 text-center">
               <div class="service-box mt-5 mx-auto">
+                <% if User.third.profile_picture.attached? %>
                 <li class="article-title"><%= image_tag User.third.profile_picture, class: "profile-picture", alt: "Clément Anthonioz-Blanc" %></li>
+                <% end %>
                 <h3 class="mb-2 lessbig"><%= User.third.first_name %> <%= User.third.last_name %></h3>
                 <h5 class="mb-2 lessbig-2"><%= User.third.title %></h3>
                 <p class="text-muted mb-0 less-less-big"><%= User.third.description %></p>
@@ -306,7 +310,9 @@
             </div>
             <div class="col-lg-3 col-md-6 text-center">
               <div class="service-box mt-5 mx-auto">
+                <% if User.fourth.profile_picture.attached? %>
                 <li class="article-title"><%= image_tag User.fourth.profile_picture, class: "profile-picture", alt: "Hedi Calabrese" %></li>
+                <% end %>
                 <h3 class="mb-2 lessbig"><%= User.fourth.first_name %> <%= User.fourth.last_name %></h3>
                 <h5 class="mb-2 lessbig-2"><%= User.fourth.title %></h3>
                 <p class="text-muted mb-0 less-less-big"><%= User.fourth.description %></p>
@@ -314,7 +320,9 @@
             </div>
             <div class="col-lg-3 col-md-6 text-center">
               <div class="service-box mt-5 mx-auto">
+                <% if User.fifth.profile_picture.attached? %>
                 <li class="article-title"><%= image_tag User.fifth.profile_picture, class: "profile-picture", alt: "Adrien Chaussinand" %></li>
+                <% end %>
                 <h3 class="mb-2 lessbig"><%= User.fifth.first_name %> <%= User.fifth.last_name %></h3>
                 <h5 class="mb-2 lessbig-2"><%= User.fifth.title %></h3>
                 <p class="text-muted mb-0 less-less-big"><%= User.fifth.description %></p>

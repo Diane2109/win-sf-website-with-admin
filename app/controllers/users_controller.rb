@@ -4,7 +4,6 @@ class UsersController < ApplicationController
   def index
     @users = User.all
     current_user
-    puts @current_user
    end
 
    def set_user
